@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mateolatte - Portfolio Template</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Adrian is a Personal Portfolio Template">
+        <meta name="keywords" content="cosmos-themes, resume, cv, portfolio, personal, developer, designer,personal resume, onepage, clean, modern">
+        <meta name="author" content="Adrian Jones">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <!--Font awesome css-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!--Magnific popup css-->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <!--Site main css-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Animate css-->
+        <link rel="stylesheet" href="css/animate.css">
+
+        <!--Google Fonts link-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:400,500,600" rel="stylesheet">
+
+        <!-- Custom Style untuk font seragam -->
+       <style>
+    /* ========================================
+       FONT SERAGAM - Montserrat & Poppins
+    ======================================== */
+
+    /* Semua heading pakai Montserrat */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Semua paragraf & teks pakai Poppins */
+    p, a, span, li, label, input, textarea, button {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Body default */
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* ========================================
+       ABOUT SECTION - Font Seragam
+    ======================================== */
+
+    /* Judul "TENTANG SAYA" */
+    .about-title {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #333;
+    }
+
+    .about-title span {
+        font-family: 'Montserrat', sans-serif !important;
+        color: #dc143c;
+        font-weight: 400;
+    }
+
+    /* Paragraf deskripsi */
+    .about-desc {
+        font-family: 'Poppins', sans-serif !important;
+        line-height: 1.8;
+        color: #555;
+        font-size: 15px;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+
+    /* Tombol Download */
+    .btn-download {
+        font-family: 'Poppins', sans-serif !important;
+        display: inline-block;
+        padding: 10px 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 13px;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    .btn-download-resume {
+        border: 2px solid #333;
+        color: #333;
+    }
+
+    .btn-download-resume:hover {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .btn-download-porto {
+        border: 2px solid #dc143c;
+        color: #dc143c;
+    }
+
+    .btn-download-porto:hover {
+        background-color: #dc143c;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* ========================================
+       SOFTWARE SECTION - Font Seragam
+    ======================================== */
+
+    /* Judul "Software" */
+    .software-card h3 {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #333;
+    }
+
+    /* Nama software */
+    .software-name {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    /* Badge level */
+    .software-level {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+
+    /* ========================================
+       CONTACT SECTION - Font Seragam
+    ======================================== */
+
+    /* Judul "Get in Touch" */
+    #contact h2 {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+
+    /* Label kontak (Address, Email, Telephone) */
+    .contact-item h4 {
+        font-family: 'Montserrat', sans-serif !important;
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    /* Isi kontak */
+    .contact-item p {
+        font-family: 'Poppins', sans-serif !important;
+        color: #666;
+        font-size: 14px;
+    }
+
+    /* ========================================
+       SERVICES SECTION - Font Seragam
+    ======================================== */
+
+    .services-item h3 {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 600;
+    }
+
+    .services-item p {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* ========================================
+       PORTFOLIO SECTION - Font Seragam
+    ======================================== */
+
+    .portfolio-header h2 {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700;
+    }
+
+    .portfolio-filter ul li {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    /* ========================================
+       NAVBAR - Font Seragam
+    ======================================== */
+
+    .nav-link {
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 500;
+    }
+
+    /* ========================================
+       FOOTER - Font Seragam
+    ======================================== */
+
+    footer p {
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 13px;
+    }
+</style>
+
+    </head>
+
+    <body>
+
+        <!--Preloader Start-->
+        <div id="loader-wrapper">
+            <div class="loading"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <!--Preloader End-->
+
+        <!--Navbar Start-->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container">
+                <!--Logo-->
+                <a class="navbar-brand" href="#"><img src="images/logo/logo.png" alt="logo"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#banner">Beranda<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Keahlian&nbsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontak&nbsp;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar End-->
+
+        <!--Banner Section Start-->
+        <section id="banner" class="wave-primary" style="background-image: url('images/background/home-header-bg.jpg')">
+            <div class="banner-text">
+                <h1 class="text-uppercase">Ilham jaka TRIANTARA</h1>
+                <!--Typed String-->
+                <div id="typed-strings">
+                    <p>Graphics Designer.</p>
+                    <p>Editor.</p>
+                </div>
+                <span id="typed"></span>
+            </div>
+            <!--Creative Background Wave-->
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 100" preserveAspectRatio="none">
+                <path d="M0,100c0,0,419-178,693-49.5S1400,0,1400,0v100H0z"/>
+            </svg>
+        </section>
+        <!--Banner Section End-->
+
+        <!--About Section Start-->
+        <section id="about" class="wave-secondary">
+            <div class="container">
+                <div class="row align-items-center" style="padding: 60px 0;">
+
+                    <!-- Kiri: Foto dengan Frame Merah - TINGGI DIKECILKAN -->
+                    <div class="col-lg-4 col-md-5 col-12 mb-4 mb-lg-0 wow fadeInLeft" data-wow-delay="0.3s">
+                        <div style="position: relative; padding: 0 0 15px 15px; max-width: 280px; margin: 0 auto;">
+                            <!-- Frame Merah L-Shape -->
+                            <div style="position: absolute; bottom: 0; left: 0; width: 70%; height: 90%; border-left: 6px solid #dc143c; border-bottom: 6px solid #dc143c; z-index: 1;"></div>
+                            <!-- Foto - Max height ditambahkan -->
+                            <img src="images/about.jpg?v=2" alt="Ilham Jaka Triantara" style="position: relative; z-index: 2; width: 100%; max-height: 350px; object-fit: cover; display: block; box-shadow: 8px 8px 25px rgba(0,0,0,0.15);">
+                        </div>
+                    </div>
+
+                    <!-- Kanan: Teks & Tombol - LEBIH LEBAR -->
+                    <div class="col-lg-8 col-md-7 col-12 wow fadeInRight" data-wow-delay="0.4s" style="padding-left: 40px;">
+
+                        <!-- Judul pakai class about-title (Montserrat) -->
+                        <h2 class="about-title">
+                            TENTANG <span><strong>SAYA</strong></span>
+                        </h2>
+
+                        <!-- Paragraf pakai class about-desc (Poppins) -->
+                        <p class="about-desc">
+                            Halo! Kenalin aku Ilham, biasa di panggil Teo, aku lulusan SMK Taman Siswa Kudus jurusan Multimedia. Sejak menempuh pendidikan di bidang multimedia, aku mulai tertarik dan terus mengeksplorasi dunia visual kreatif.
+                      </p>
+                        <p class="about-desc" style="margin-bottom: 30px;">
+                          Selama masa sekolah, aku pernah magang menjadi junior editor selama satu tahun. Setelah itu, aku juga memiliki pengalaman kerja sebagai video editor selama satu tahun. Pengalaman tersebut membantuku mengembangkan kemampuan dalam mengolah visual, menyusun alur video, dan menyampaikan pesan melalui media digital.
+                      </p>
+
+                        <!-- Tombol Download pakai class btn-download (Poppins) -->
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <a href="https://drive.google.com/file/d/1GjZP1WMm3x_CyoCj44Bv6ppRBJxezhXF/view?usp=drive_link" 
+                               target="_blank" 
+                               class="btn-download btn-download-resume">
+                                Download Resume
+                            </a>
+                            <a href="https://drive.google.com/file/d/1w7tdD0DA40mf8NXQel-IF6_ItQssN0MI/view?usp=drive_link" 
+                               target="_blank" 
+                               class="btn-download btn-download-porto">
+                                Download Portofolio
+                            </a>
+                        </div>
+                  </div>
+                </div>
+
+                <!-- Software Skills -->
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="software-card">
+                            <!-- Judul Software pakai Montserrat via class -->
+                            <h3 class="text-uppercase text-center mb-5">Creative Toolkit</h3>
+                            <div class="row software-grid">
+
+                                <!-- Adobe Photoshop -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                                    <div class="software-item text-center wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="software-icon">
+                                            <img src="images/software/photoshop.png" alt="Photoshop" style="height: 50px; width: auto;">
+                                        </div>
+                                        <!-- Nama pakai class software-name (Montserrat) -->
+                                        <h4 class="software-name">Adobe Photoshop</h4>
+                                        <!-- Badge pakai class software-level (Poppins) -->
+                                        <span class="software-level badge badge-success">Mahir</span>
+                                    </div>
+                                </div>
+
+                                <!-- Adobe Illustrator -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                                    <div class="software-item text-center wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="software-icon">
+                                            <img src="images/software/illustrator.png" alt="Illustrator" style="height: 50px; width: auto;">
+                                        </div>
+                                        <h4 class="software-name">Adobe Illustrator</h4>
+                                        <span class="software-level badge badge-primary">Menengah</span>
+                                    </div>
+                                </div>
+
+                                <!-- Adobe Premiere Pro -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                                    <div class="software-item text-center wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="software-icon">
+                                            <img src="images/software/premiere.png" alt="Premiere Pro" style="height: 50px; width: auto;">
+                                        </div>
+                                        <h4 class="software-name">Adobe Premiere Pro</h4>
+                                        <span class="software-level badge badge-primary">Menengah</span>
+                                    </div>
+                                </div>
+
+                                <!-- CapCut -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                                    <div class="software-item text-center wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="software-icon">
+                                            <img src="images/software/capcut.png" alt="CapCut" style="height: 50px; width: auto;">
+                                        </div>
+                                        <h4 class="software-name">CapCut</h4>
+                                        <span class="software-level badge badge-success">Mahir</span>
+                                    </div>
+                                </div>
+
+                                <!-- Canva -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                                    <div class="software-item text-center wow fadeInUp" data-wow-delay="0.5s">
+                                        <div class="software-icon">
+                                            <img src="images/software/canva.png" alt="Canva" style="height: 50px; width: auto;">
+                                        </div>
+                                        <h4 class="software-name">Canva</h4>
+                                        <span class="software-level badge badge-success">Mahir</span>
+                                    </div>
+                                </div>
+
+                                <!-- Ibis Paint X -->
+                                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                                    <div class="software-item text-center wow fadeInUp" data-wow-delay="0.6s">
+                                        <div class="software-icon">
+                                            <img src="images/software/ibispaint.png" alt="Ibis Paint X" style="height: 50px; width: auto; border-radius: 8px;">
+                                        </div>
+                                        <h4 class="software-name">Ibis Paint X</h4>
+                                        <span class="software-level badge badge-primary">Menengah</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Creative Background Wave-->
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 100" preserveAspectRatio="none">
+                <path d="M0,100c0,0,419-178,693-49.5S1400,0,1400,0v100H0z"/>
+            </svg>
+        </section>
+        <!--About Section End-->
+
+        <!--Portfolio Section Start-->
+        <section id="portfolio" class="wave-primary">
+            <div class="container">
+                <div class="portfolio-header padbtm-60">
+                    <h2 class="text-uppercase">Portfolio</h2>
+                    <div class="portfolio-filter">
+                        <ul>
+                            <li class="sel-item" data-filter="*">All</li>
+                            <li data-filter=".web-design">Web Design</li>
+                            <li data-filter=".application">Applications</li>
+                            <li data-filter=".development">Development</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--portfolio items-->
+                <div class="row portfolio-items">
+                    <!--item-->
+                    <div class="col-lg-4 col-md-6 single-item application wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="popup" href="images/portfolio/item-1.jpg">
+                            <img src="images/portfolio/item-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--item-->
+                    <div class="col-lg-4 col-md-6 single-item web-design wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="popup" href="images/portfolio/item-2.jpg">
+                            <img src="images/portfolio/item-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--item-->
+                    <div class="col-lg-4 col-md-6 single-item web-design wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="popup" href="images/portfolio/item-3.jpg">
+                            <img src="images/portfolio/item-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--item-->
+                    <div class="col-lg-4 col-md-6 single-item development wow fadeInUp" data-wow-delay="0.8s">
+                        <a class="popup" href="images/portfolio/item-4.jpg">
+                            <img src="images/portfolio/item-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--item-->
+                    <div class="col-lg-4 col-md-6 single-item application wow fadeInUp" data-wow-delay="1s">
+                        <a class="popup" href="images/portfolio/item-5.jpg">
+                            <img src="images/portfolio/item-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <!--item-->
+                    <div class="col-lg-4 col-md-6 single-item web-design wow fadeInUp" data-wow-delay="1.2s">
+                        <a class="popup" href="images/portfolio/item-6.jpg">
+                            <img src="images/portfolio/item-6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Creative Background Wave-->
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1400 100" preserveAspectRatio="none">
+                <path d="M0,100c0,0,419-178,693-49.5S1400,0,1400,0v100H0z"/>
+            </svg>
+        </section>
+        <!--Portfolio Section End-->
+
+        <!--Services Section Start-->
+        <!-- PERUBAHAN DI SINI: wave-secondary jadi wave-primary -->
+        <section id="services" class="wave-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="text-uppercase marbtm-60">Keahlian</h2>
+                    </div>
+
+                    <!-- Graphic Design -->
+                    <div class="col-lg-6 col-md-6 wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="services-item">
+                            <i class="fa fa-paint-brush fa-2x"></i>
+                            <h3>Graphic Design</h3>
+                            <p>Membuat desain visual untuk kebutuhan branding, media sosial, promosi, thumbnail, dan berbagai materi digital yang menarik.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Editing -->
+                    <div class="col-lg-6 col-md-6 wow fadeInDown" data-wow-delay="0.4s">
+                        <div class="services-item">
+                            <i class="fa fa-video-camera fa-2x"></i>
+                            <h3>Video Editing</h3>
+                            <p>Mengedit video promosi, cinematic, reels, dan konten digital dengan fokus pada storytelling dan kualitas visual.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Creative Background Wave-->
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px"
+                viewBox="0 0 1400 100"
+                preserveAspectRatio="none">
+                <path d="M0,100c0,0,419-178,693-49.5S1400,0,1400,0v100H0z"/>
+            </svg>
+        </section>
+        <!--Services Section End-->
+
+        <!--Contact Us Section Start -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3 col-sm-12 address-box text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="text-center marbtm-50">Let's Work Together</h2>
+                        <div class="contact-info">
+                            <!--Contact Item-->
+                            <div class="contact-item" style="margin-bottom: 25px;">
+                                <h4>Alamat</h4>
+                                <p>Kota Semarang, Jawa Tengah, Indonesia</p>
+                            </div>
+                            <!--Contact Item-->
+                            <div class="contact-item" style="margin-bottom: 25px;">
+                                <h4>Email</h4>
+                                <p>ilhamjakatara12@gmail.com</p>
+                            </div>
+                            <!--Contact Item-->
+                            <div class="contact-item">
+                                <h4>Nomor Telepon</h4>
+                                <p>(+62) 851 2266 4151</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Contact Us Section End-->
+
+        <!--Footer Section Start-->
+        <footer style="background-color: #111; padding-top: 60px; padding-bottom: 60px;">
+            <div class="container">
+                <div class="col-md-12">
+                    <ul class="social-icons">
+                        <li class="wow fadeInUp" data-wow-delay=".2s">
+                            <a href="https://www.linkedin.com/in/ilhamjakatriantara/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".4s">
+                            <a href="https://www.behance.net/mateolatte" target="_blank"><i class="fa fa-behance"></i></a>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay=".6s">
+                            <a href="https://www.instagram.com/cuteanymooore/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                  <p> Copyright &copy; 2026 Mateolatte Portfolio, All Rights Reserved.<br>
+                  </p>
+                    <p>&nbsp;Thank you for visiting my portfolio.</p>
+                </div>
+            </div>
+            <!-- HAPUS BAGIAN INI -->
+            <!-- <svg class="wave" ...>...</svg> -->
+        </footer>
+        <!--Footer Section End-->
+
+        <!--JQuery js-->
+        <script src="js/jquery.min.js"></script>
+        <!--Bootstrap js-->
+        <script src="js/bootstrap.min.js"></script>
+        <!--Typed js-->
+        <script src="js/typed.min.js"></script>
+        <!--Isotope js-->
+        <script src="js/isotope.pkgd.min.js"></script>
+        <!--Wow js-->
+        <script src="js/wow.min.js"></script>
+        <!--FitText js-->
+        <script src="js/jquery.fittext.js"></script>
+        <!--Magnific popup js-->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!--Site main js-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
